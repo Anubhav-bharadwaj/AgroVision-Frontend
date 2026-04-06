@@ -100,11 +100,14 @@
     padding: 7px 16px !important;
   }
 
+  .nav-cta.active{
+background: var(--leaf);
+color: #fff !important;
+}
+
   .nav-cta:hover { background: #2d5518 !important; color: #fff !important; }
 
-  /* ── MAIN LAYOUT ── */
-  .page { display: none; }
-  .page.active { display: block; }
+ 
 
   /* ── HERO ── */
   .hero {

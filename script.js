@@ -1,14 +1,8 @@
- function showPage(page) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page-' + page).classList.add('active');
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    const navEl = document.getElementById('nav-' + page);
-    if (navEl) navEl.classList.add('active');
-    window.scrollTo(0,0);
-  }
 
   // ── Image Upload ──
-  const dropZone = document.getElementById('dropZone');
+ const dropZone = document.getElementById('dropZone');
+
+if (dropZone) {
   const fileInput = document.getElementById('fileInput');
   const previewArea = document.getElementById('previewArea');
   const previewImg = document.getElementById('previewImg');
@@ -236,3 +230,4 @@
     btn.classList.add('active');
     document.getElementById('tab-' + name).classList.add('active');
   }
+}
